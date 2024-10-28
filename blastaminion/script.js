@@ -4,8 +4,8 @@ let scoreEl = document.getElementById('score');
 let score = 0;
 
 document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
+    cursor.style.left = e.pageX - 50 + 'px';
+    cursor.style.top = e.pageY -50 + 'px';
 });
 
 document.addEventListener('mousedown', () =>{

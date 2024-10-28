@@ -53,6 +53,7 @@ h2{
     position: absolute;
     transform: translate(-15%, -15%);
     pointer-events: none;
+    cursor: none;
 }
 .cursor.active{
     transform: translate(-15%, -15%) rotate
