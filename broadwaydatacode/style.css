@@ -1,0 +1,106 @@
+img {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #0e0e55;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.img-gallery{
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+    grid-gap: 20px;
+
+}
+.img-gallery img{
+    width: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+/* When the image is hovered over, it scales slightly */
+img:hover {
+    transform: scale(1.1);
+}
+
+.clicked {
+    border: 10px solid green; /* Change border color */
+    filter: brightness(1.5); /* Increase brightness */
+}
+
+/* Add transition for smooth effect */
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+div.row{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.img-gallery img:hover{
+    box-shadow: 0 100px 100px rgba(68,77,136, 0.2);
+}
+
+#totalValue {
+    color:#0e0e55
+}
+
+#doneButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    
+btn:hover{
+    background-color: darkseagreen;
+}
+
+/* End screen styles */
+.end-screen {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e55;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 1000;
+}
+
+.end-screen h2 {
+    font-size: 3em;
+}
+
+.end-screen p {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: darkgreen;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Broadway Shows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img-gallery">
+       <div class="row">
+        <img src="& Juliet.jpg" data-value="150" class="clickable">
+        <img src="aladdin.jpg" data-value="150" class="clickable">
+        <img src="back to the future.jpg" data-value="160" class="clickable">
+        <img src="book of mormon.jpg" data-value="150" class="clickable">
+       </div>
+       <div class="row">
+        <img src="cabaret.jpg" data-value="165" class="clickable">
+        <img src="chicago.jpg" data-value="150" class="clickable">
+        <img src="death becomes her.jpg" data-value="150" class="clickable">
+        <img src="elf.jpg" data-value="150" class="clickable">
+       </div>
+       <div class="row">
+        <img src="great gatsby.jpg" data-value="150" class="clickable">
+        <img src="hadestown.jpg" data-value="145" class="clickable">
+        <img src="hamilton.jpg" data-value="175" class="clickable">
+        <img src="harry potter.jpg" data-value="170" class="clickable">
+       </div>
+       <div class="row">
+        <img src="hell's kitchen.jpg" data-value="150" class="clickable">
+        <img src="left on tenth.jpg" data-value="100" class="clickable">
+        <img src="lion king.jpg" data-value="150" class="clickable">
+        <img src="maybe happy ending.jpg" data-value="100" class="clickable">
+       </div>
+       <div class="row">
+        <img src="MJ.jpg" data-value="150" class="clickable">
+        <img src="moulin rouge.jpg" data-value="165" class="clickable">
+        <img src="oh mary.jpg" data-value="80" class="clickable">
+        <img src="once upon a mattress.jpg" data-value="135" class="clickable">
+       </div>
+       <div class="row">
+        <img src="our town.jpg" data-value="110" class="clickable">
+        <img src="romeo and juliet.jpg" data-value="145" class="clickable">
+        <img src="six.jpg" data-value="80" class="clickable">
+        <img src="stereophonic.jpg" data-value="185" class="clickable">
+       </div>
+       <div class="row">
+        <img src="suffs.jpg" data-value="150" class="clickable">
+        <img src="sunset boulevard.jpg" data-value="155" class="clickable">
+        <img src="swept away.jpg" data-value="90" class="clickable">
+        <img src="tammy faye.jpg" data-value="150" class="clickable">
+       </div>
+       <div class="row">
+        <img src="a wonderful world.jpg" data-value="150" class="clickable">
+        <img src="the notebook.jpg" data-value="140" class="clickable">
+        <img src="the outsiders.jpg" data-value="145" class="clickable">
+        <img src="the roommate.jpg" data-value="90" class="clickable">
+       </div>
+       <div class="row">
+        <img src="water for elephants.jpg" data-value="150" class="clickable">
+        <img src="wicked.jpg" data-value="150" class="clickable">
+       </div>
+       
+       <h2><span id="totalValue">0</span></h2>
+
+        <!-- Done button that triggers the end screen -->
+    <button id="doneButton">Click here to reveal your Broadway minutes!</button>
+
+      </div>
+  </div>
+
+<!-- End screen, initially hidden -->
+  <div id="endScreen" class="end-screen">
+    <h2>Wow! That's a lot of Broadway shows!</h2>
+    <p>Your Broadway Minutes: <span id="finalScore">0</span></p>
+    <button id="restartButton">Need to add another show?</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div id="lightbox" class="hidden">
+    <img src="" alt="">
+    <span id="close">&times;</span>
+  </div>
