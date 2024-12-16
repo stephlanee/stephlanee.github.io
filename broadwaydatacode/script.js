@@ -21,8 +21,10 @@ images.forEach(image => {
 // Select the end screen and restart button elements
 const endScreen = document.getElementById('endScreen');
 const finalScoreElement = document.getElementById('finalScore');
+//const clickCountElement = document.getElementById('clickCount');
 const restartButton = document.getElementById('restartButton');
 const totalValueElement = document.getElementById('totalValue');
+const endScreenMessage = document.getElementById('endScreenMessage');
 
 // Function to handle image click
 images.forEach(image => {
@@ -57,7 +59,27 @@ images.forEach(image => {
 // Function to show the end screen with final score
 function showEndScreen() {
    finalScoreElement.textContent = total; // Display final score
+   displayEndScreenMessage(total); // Call the function to display the message
+   //clickCountElement.textContent = clickedImages; // Display the total clicks
    endScreen.style.display = 'block'; // Show the end screen
+}
+
+// Function to display a custom message based on the user's score
+function displayEndScreenMessage(score) {
+    let message = '';
+    
+    if (score >= 3000) {
+        message = "Great job! You're a Broadway expert!";
+    } else if (score >= 2000) {
+        message = "Nice work! You know your Broadway shows!";
+    } else if (score >= 1000) {
+        message = "Good effort! You still have a lot to learn about Broadway.";
+    } else {
+        message = "Keep trying! Broadway has a lot to discover!";
+    }
+    
+    // Update the end screen message element with the appropriate message
+    endScreenMessage.textContent = message;
 }
 
 // Handle the "Done" button click
